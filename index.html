@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Linear gradient generator</title>
+   <!-- STYLES  -->
+   <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <div class="gradient">
+      <div class="gradient__generator">
+            <div class="gradient__colors">
+               <input class="gradient__color" id="color-selector-1" type="color" value="#fff">
+               <input class="gradient__color-pointer" id="color-pointer-1" type="text">
+            </div>
+            <div class="gradient__colors">
+               <input class="gradient__color" id="color-selector-2" type="color">
+               <input class="gradient__color-pointer" id="color-pointer-2" type="text">
+            </div>
+            <div class="gradient__rotation">
+               <h4 class="gradient___rotation-title">Rotation</h4>
+               <input class="gradient__rotation-pointer" id="rotation-pointer" type="text">
+            </div>
+            <input class="gradient__rotation-range" id="rotation-range" type="range" min="0" max="360" step="1">
+      </div>
+      <div class="gradient__pointer" id="gradient__pointer"></div>
+   </div>
+   <div class="overlay"></div>
+   <!-- JS  -->
+   <script src="./js/app.js"></script>
+</body>
+</html>

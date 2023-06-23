@@ -1,0 +1,133 @@
+*,
+*::before,
+*:after{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+
+html{
+   font-size: 62.5%;
+}
+
+body {
+   height:100vh;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+
+}
+
+.gradient {
+   display:flex;
+   align-items:center;
+   gap:100px;
+   background:white;
+   padding:4rem 6rem;
+   border-radius:15px;
+   z-index:100;
+   box-shadow: inset #b1b0b5 0 0 0 1px, inset white 0 0 0 100px !important;
+}
+
+.gradient__colors {
+   display:flex;
+   align-items:center;
+   gap:6rem;
+   margin-bottom:30px;
+}
+.gradient__color {
+   width:110px;
+   height:70px;
+   border:none;
+}
+.gradient__color-pointer {
+   padding:1rem 1rem;
+   font-size:2rem;
+   border:none;
+   box-shadow: inset #d8d8da 0 0 0 1px, inset white 0 0 0 100px !important;
+   border-radius:10px;
+   transition:box-shadow 0.1s ease;
+   outline:none;
+}
+
+.gradient__color-pointer:focus{
+   box-shadow: inset #0066ff 0 0 0 1px, inset white 0 0 0 100px !important;
+   
+}
+
+.gradient__color-pointer:hover:not(:focus){
+   box-shadow: inset #b1b0b5 0 0 0 1px, inset white 0 0 0 100px !important
+}
+
+.gradient__rotation {
+   display:flex;
+   align-items:center;
+   gap:8rem;
+   margin-bottom:4rem;
+}
+.gradient__rotation-pointer {
+   padding:1rem 1rem;
+   border:1px solid black;
+   font-size:2rem;
+   border:none;
+   box-shadow: inset #d8d8da 0 0 0 1px, inset white 0 0 0 100px !important;
+   border-radius:10px;
+   outline:none;
+   transition: all 0.1s ease;
+}
+
+.gradient__rotation-pointer:focus{
+   box-shadow: inset #0066ff 0 0 0 1px, inset white 0 0 0 100px !important;
+   
+}
+
+.gradient__rotation-pointer:hover:not(:focus){
+   box-shadow: inset #b1b0b5 0 0 0 1px, inset white 0 0 0 100px !important
+}
+
+.gradient__pointer {
+   min-width:350px;
+   min-height:350px;
+   border-radius:8px;
+   background-color: rgba(0,0,0,0.2);
+}
+.gradient__rotation-range{
+   width:430px;
+}
+
+.gradient___rotation-title{
+   font-size:2.2rem;
+
+}
+
+.overlay{
+   position:fixed;
+   top:0;
+   left:0;
+   bottom:0;
+   width:100%;
+   background-color: rgba(0,0,0,0.2);
+   backdrop-filter: blur(5px);
+}
+
+@media only screen and (max-width:1050px){
+   .gradient{
+      flex-wrap:wrap-reverse;
+      justify-content: center;
+      gap:5rem;
+      max-width:500px
+
+   }
+
+   .gradient__pointer{
+      min-width:430px;
+      min-height:200px;
+
+   }
+}
+
+@media only screen and (max-width:550px) {
+   .gradient{
+      transform: scale(0.5)
+   }
+}
