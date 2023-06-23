@@ -128,6 +128,6 @@ body {
 
 @media only screen and (max-width:550px) {
    .gradient{
-      transform: scale(0.5)
+      transform: scale(0.5) translateY(-350px)
    }
 }
